@@ -36,6 +36,4 @@ When n = 3:
 """
 
 for i in range(int(input("No. of lines: "))):
-    for j in range(3):
-        print("*", end="")
-    print()
+    print((str(i+1) + " ") * 3)

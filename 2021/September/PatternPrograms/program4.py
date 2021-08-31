@@ -18,26 +18,19 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""Pattern 1
+"""Program 4
 
-Generate the following pattern:
-Use NESTED LOOP.
+Print following pattern:
 
-When n = 4:
-***
-***
-***
-***
+n = 4
 
-When n = 3:
-***
-***
-***
+1
+1 3
+1 3 5
+1 3 5 7
 """
-# Note: For any pattern, outer loop controls number of line
-# and inner loop controls characters in each line, as shown below:
-inp = int(input("No. of lines: "))
-for i in range(inp):
-    for j in range(3):
-        print("*", end="")
+
+for i in range(1, int(input("No. of lines: ")) + 1):
+    for j in range(i):
+        print((j*2) + 1, end=" ")
     print()
