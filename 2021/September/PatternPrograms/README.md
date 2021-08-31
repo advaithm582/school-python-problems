@@ -6,4 +6,4 @@ Name | Description
 [Number Tree](program2.py) | Generate a number tree program, refer to docstring.
 [Raining numbers!](program3.py) | Refer to docstring.
 [It's odd!](program4.py) | Refer to docstring.
-[Google's Parents](program5.py) | Print alphabets! (Bad pun, excuse me!)
+[Google's Parents](program5.py) | Print alphabets!
