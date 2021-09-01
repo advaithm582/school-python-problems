@@ -8,3 +8,4 @@ Name | Description
 [It's odd!](program4.py) | Refer to docstring.
 [Google's Parents](program5.py) | Print alphabets!
 [Alphabet Soup](program6.py) | Print alphabets in a pyramid
+[ASCII Disco](program7.py) | Print alphabets repeatedly
