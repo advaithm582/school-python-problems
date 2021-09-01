@@ -9,3 +9,4 @@ Name | Description
 [Google's Parents](program5.py) | Print alphabets!
 [Alphabet Soup](program6.py) | Print alphabets in a pyramid
 [ASCII Disco](program7.py) | Print alphabets repeatedly
+[Character Republic](program8.py) | Have a look at the docstring.
