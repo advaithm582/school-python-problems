@@ -7,3 +7,4 @@ Name | Description
 [Raining numbers!](program3.py) | Refer to docstring.
 [It's odd!](program4.py) | Refer to docstring.
 [Google's Parents](program5.py) | Print alphabets!
+[Alphabet Soup](program6.py) | Print alphabets in a pyramid
