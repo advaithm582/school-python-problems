@@ -18,9 +18,20 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+
 n, x = map(int, input("> ").split())
+#Sign - to store sign
+#Total - total value
+#FV - Previously calculated factorial value to reduce no. 
+#of multiplications.
+
 sign, total, fv = -1, 0, 1
+
 for i in range(1, n + 1): 
+    # e.g i = 5
+    # fv = 4! * 5
     fv *= i
+    # total = 1 * ((x**i)/fv)
     total += (sign**(i-1)) * ((x**i)/fv)
+    #          ^ I decide sign
 print(total)
