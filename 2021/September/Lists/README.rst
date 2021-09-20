@@ -10,6 +10,8 @@ Programs on Lists
      - Program Desctiption
    * - `program1.py <program1.py>`_
      - Without using builtins, find the greatest number given a list.
-   * - Row 2, column 1
-     - Row 2, column 2
+   * - `program2.py <program2.py>`_
+     - Without using builtins, find the second greatest number given a list.
+   * - `program3.py <program3.py>`_
+     - Print odd sum and even sum
 
