@@ -19,4 +19,10 @@
 # SOFTWARE.
 
 n = int(input("> "))
-print((n/2) * (2 + (n-1) * 2))
+#print((n/2) * (2 + (n-1) * 2))
+s1 = (n/2) * (2 + (n-1) * 2)
+s2=0
+for i in range(1, 2*n+1, 2):
+    s2 += i
+
+assert s1 == s2
