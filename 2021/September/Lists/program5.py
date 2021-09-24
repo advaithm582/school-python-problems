@@ -36,30 +36,10 @@ ll = l()
 rl = l()
 
 fl = l()
-'''
-for i in r(len(m)):
-    if m[i]%2:
-        # if i%2 is not zero
-        # list concatenation
-        ll += [m[i]]
-    else:
-        # even no
-        fl = fl[::-1]
-        rl += [m[i]]
-'''
 
 for i in r(len(m)):
     logger.debug(f"{m}, {m[i]}, {i}")
-    if m[i]%2:
-##        # if i%2 is not zero
-##        # list concatenation
-##        fl = fl[::-1]
-##        logger.debug("rev {fl}")
-##        fl += [m[i]]
-##        fl = fl[::-1]
-##        logger.debug("norm {fl}")
-        pass
-    else:
+    if not m[i]%2:
         # even no
         fl += [m[i]]
 
@@ -76,7 +56,4 @@ for i in r(len(m)-1, -1, -1):
         fl = fl[::-1]
         logger.debug(f"norm {fl}")
         
-'''
-m = ll+rl
-p(m)'''
 p(fl)
