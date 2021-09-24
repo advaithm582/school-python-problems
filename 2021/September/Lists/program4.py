@@ -29,6 +29,7 @@ logger = logging.getLogger(__name__)
 
 p = print
 r = range
+i = input
 # Range from 1
 r1 = lambda stop: range(1, stop+1)
 # Range from 1 for iterable

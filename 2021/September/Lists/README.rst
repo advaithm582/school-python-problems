@@ -14,4 +14,8 @@ Programs on Lists
      - Without using builtins, find the second greatest number given a list.
    * - `program3.py <program3.py>`_
      - Print odd sum and even sum
+   * - `program4.py <program4.py>`_
+     - Bubble Sort
+   * - `program5.py <program5.py>`_
+     - Sort odd and even numbers
 

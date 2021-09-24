@@ -18,13 +18,15 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import logging
+logging.basicConfig(encoding='utf-8', level=logging.DEBUG)
+
+
+logger = logging.getLogger(__name__)
+
 p = print
 r = range
 l = list
-# Range from 1
-r1 = lambda stop: range(1, stop+1)
-# Range from 1 for iterable
-ri = lambda iterable: range(1, len(iterable)+1)
 # Map int input
 mii = lambda p: list(map(int, input(p).split()))
 
@@ -33,13 +35,48 @@ m = mii("Enter numbers: ")
 ll = l()
 rl = l()
 
+fl = l()
+'''
 for i in r(len(m)):
     if m[i]%2:
         # if i%2 is not zero
+        # list concatenation
         ll += [m[i]]
     else:
         # even no
+        fl = fl[::-1]
         rl += [m[i]]
+'''
 
-fl = ll+rl
+for i in r(len(m)):
+    logger.debug(f"{m}, {m[i]}, {i}")
+    if m[i]%2:
+##        # if i%2 is not zero
+##        # list concatenation
+##        fl = fl[::-1]
+##        logger.debug("rev {fl}")
+##        fl += [m[i]]
+##        fl = fl[::-1]
+##        logger.debug("norm {fl}")
+        pass
+    else:
+        # even no
+        fl += [m[i]]
+
+for i in r(len(m)-1, -1, -1):
+    logger.debug(f"loop 2 {i} {m}")
+    logger.debug(f"num {m[i]}")
+    if m[i]%2 != 0:
+        # if i%2 is not zero
+        # list concatenation
+        fl = fl[::-1]
+        logger.debug(f"num {m[i]}")
+        logger.debug(f"rev {fl}")
+        fl += [m[i]]
+        fl = fl[::-1]
+        logger.debug(f"norm {fl}")
+        
+'''
+m = ll+rl
+p(m)'''
 p(fl)
