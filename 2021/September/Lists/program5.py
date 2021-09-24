@@ -17,42 +17,29 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
-"""Bubble Sort"""
-
-import logging
-
-
-logging.basicConfig(encoding='utf-8', level=logging.DEBUG)
-
-
-logger = logging.getLogger(__name__)
 
 p = print
 r = range
+l = list
 # Range from 1
 r1 = lambda stop: range(1, stop+1)
 # Range from 1 for iterable
 ri = lambda iterable: range(1, len(iterable)+1)
-# Map float input
-mfi = lambda p: list(map(float, input(p).split()))
+# Map int input
+mii = lambda p: list(map(int, input(p).split()))
 
+m = mii("Enter numbers: ")
 
-lst = mfi("Enter number: ")
-logger.debug(f"list {lst}")
+ll = l()
+rl = l()
 
-for pass_no in ri(lst):
-    logger.debug(f"Pass no {pass_no}")
-    for i in r(len(lst)-pass_no):
-        logger.debug(f"i {i}")
-        logger.debug(f"{lst[i]} and {lst[i+1]}")
-        if lst[i]>lst[i+1]:
-            logger.debug(f"switched")
-            lst[i], lst[i+1] = lst[i+1], lst[i]
-            logger.debug(f"after: {lst[i]} and {lst[i+1]}")
-        logger.debug(f"After operation: {lst}")
-        logger.debug(f"----------------------")
-    logger.debug(f"Pass {pass_no} has ended")
-    logger.debug(f"=============END PASS {pass_no}=============")
+for i in r(len(m)):
+    if m[i]%2:
+        # if i%2 is not zero
+        ll += [m[i]]
+    else:
+        # even no
+        rl += [m[i]]
 
-p(lst)
-        
+fl = ll+rl
+p(fl)
