@@ -20,10 +20,7 @@ N.B the order has been changed.
      - Sort a list of numbers using Bubble sort or Insertion sort as per user’s choice
    * - `LIST OPERATION`_
      - Read a list of numbers and display the 1st highest, 2nd highest, 1st least 2nd least number
-   * - `nil`
-     - Has pattern programs
-   * - `nil`_
-     - Has pattern programs
+     
 .. _`PALINDROME CHECK`: program12.py
 .. _`CAPITALIZE EACH WORD`: program13.py
 .. _`LIST OPERATION`: program15.py
