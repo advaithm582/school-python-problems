@@ -11,7 +11,7 @@ Practical Observation Programs
      - A string is read and displayed whether palindrome or not
    * - `CAPITALIZE EACH WORD`_
      - Read a string and capitalize 1st letter of every word
-   * - `STRING WITH MAXIMUM VOWELs`_
+   * - `STRING WITH MAXIMUM VOWELS`_
      - Read a list of strings and display the string with the maximum vowels
    * - `SORT A LIST`_
      - Sort a list of numbers using Bubble sort or Insertion sort as per user’s choice
