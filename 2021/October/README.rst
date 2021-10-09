@@ -1,6 +1,9 @@
 =================================
 Practical Observation Programs
 =================================
+
+N.B the order has been changed.
+
 .. list-table:: 
    :widths: 25 75
    :header-rows: 1
@@ -23,6 +26,6 @@ Practical Observation Programs
      - Has pattern programs
 .. _`PALINDROME CHECK`: program12.py
 .. _`CAPITALIZE EACH WORD`: program13.py
-.. _`LIST OPERATION`: program14.py
-.. _`STRING WITH MAXIMUM VOWELS`: program15.py
+.. _`LIST OPERATION`: program15.py
+.. _`STRING WITH MAXIMUM VOWELS`: program14.py
 .. _`SORT A LIST`: program16.py
