@@ -18,5 +18,8 @@ List for August, 2021
      - Contains a single problem set
    * - `September`_
      - Has pattern programs
+   * - `October`_
+     - Has pattern programs
 .. _`August`: August
 .. _`September`: September
+.. _`September`: October
