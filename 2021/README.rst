@@ -22,4 +22,4 @@ List for August, 2021
      - Has pattern programs
 .. _`August`: August
 .. _`September`: September
-.. _`September`: October
+.. _`October`: October
