@@ -12,4 +12,4 @@ Link | Description | Long Description
 [Problem 8](problem8.py) | Reverse | reverse a given string.
 [Problem 9](problem9.py) | Palindrome | Find out if given string is a palindrome.
 [Problem 10](problem10.py) | Prime or composite | Is a number prime or composite?
-[Problem 11](problem11.py) | Charstring | Is the given haracter in a string?
+[Problem 11](problem11.py) | Charstring | Is the given character in a string?
