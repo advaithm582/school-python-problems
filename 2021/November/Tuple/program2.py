@@ -17,3 +17,20 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+"""tuple based program
+
+write a program to check for prime numbers present in a tuple
+and display count of prime nos.
+"""
+tup = input("Enter a tuple: ")
+tup = eval(tup if tup.replace(",","").isdigit() else "exit()")
+pnos = [] # Prime NumberS
+for element in tup:
+    for i in range(2,element//2):
+        if element%i==0: 
+            break
+    else:
+        if element-1: pnos.append(element)
+
+print(len(pnos), "is the no of primes")
+print(*pnos, sep=", ", end=" are the elements")
