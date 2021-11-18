@@ -26,13 +26,13 @@ largest element of the tuple.
 
 # Import quicksort
 # import algorithms
-import algorithms
-sort = algorithms.sorting.quicksort.quicksort
+# import algorithms
+# sort = algorithms.sorting.quicksort.quicksort
 # (or) use Mergesort
 # import algorithms
 # sort =  algorithms.sorting.merge_sort.mergesort
 # (or) builtin function
-# sort = sorted
+# sort = list.sort
 
 total = int(input("Enter no of elements: "))
 s = []
