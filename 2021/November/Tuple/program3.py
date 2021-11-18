@@ -32,7 +32,9 @@ sort = algorithms.sorting.quicksort.quicksort
 # import algorithms
 # sort =  algorithms.sorting.merge_sort.mergesort
 # (or) builtin function
-# sort = list.sort
+# sort = list.sort # mergesort+insertion sort
+# All algorithms has O(n log n), so that's cool
+# But bubble sort has O(n^2), and that is NOT COOL.
 
 tup = input("Enter a tuple: ")
 tup = eval(tup if tup.replace(",","").isdigit() else "exit()")
