@@ -17,3 +17,29 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+
+"""tuple problems
+
+Write a program to check if elements in the first half of a tuple are 
+sorted in ascending order.
+"""
+
+# For this algorithm we can use QuickSort
+import algorithms
+sort = algorithms.sorting.quicksort.quicksort
+# Not recommended:
+# (or) use Mergesort
+# import algorithms
+# sort =  algorithms.sorting.merge_sort.mergesort
+# (or) builtin function
+# sort = list.sort
+
+tup = input("Enter a tuple: ")
+tup = eval(tup if tup.replace(",","").isdigit() else "exit()")
+lst = list(tup)
+sort(lst,r=len(lst)//2)
+# or
+# sort(lst)
+tups = tuple(lst)
+print("yes" if tups[:len(lst)//2+1] == tup[:len(lst)//2+1] else "no")
+
